@@ -500,7 +500,7 @@ public class ScrapServiceImpl implements ScrapService{
 	public GoogleVisonDto GoogleVisonApi() {
 		GoogleVisonDto GoogleVisonData = new GoogleVisonDto();
 		try {
-			File dir = new File("D:\\hanu_work\\RPA\\GoogleVision\\images");
+			File dir = new File("/root/GoogleVision/images");
 			FileFilter filter = new FileFilter() {
 			    public boolean accept(File f) {
 			        return f.getName().endsWith("jpg");
